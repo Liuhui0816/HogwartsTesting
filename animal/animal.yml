@@ -1,0 +1,22 @@
+#将数据配置到yaml文件里
+
+hair: &hair
+  hair: long
+
+cat:
+  <<: *hair
+  name: Garfield
+  color: yellow
+  age: 1
+  sex: female
+
+
+dog:
+  <<: *hair
+  name: Labrador
+  color: white
+  age: 2
+  sex: male
+
+
+
