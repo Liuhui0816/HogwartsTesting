@@ -1,3 +1,4 @@
+#加法
 add:
   add_data:
     - [0,0,0]
@@ -6,6 +7,7 @@ add:
     - [0.1, 0.2, 0.3]
     - [-1, -2, -3]
     - [-0.04,0.09,0.05]
+    - ['',6,'特殊符号']
 
   add_myId:
     - "zero"
@@ -14,6 +16,39 @@ add:
     - "float"
     - "negative"
     - "mix"
+    - 'specific symbol'
+
+#减法
+sub:
+  sub_data:
+    - [1,1,0]
+    - [1,2,-1]
+    - [-89,-22,-67]
+    - [3.16,1.5,1.66]
+    - [0,0,0]
+    - [' ','.','特殊字符' ]
+  sub_myId:
+    - "int"
+    - "mix"
+    - "negative"
+    - "float"
+    - "zero"
+    - 'specific symbol'
+
+mul:
+  mul_data:
+    - [2,1,2]
+    - [0,0,0]
+    - [0,10,0]
+    - [0,-0.09,0]
+    - [' ','.','特殊字符' ]
+  mul_myId:
+    - "int"
+    - "zero"
+    - "mix"
+    - "negative"
+    - "specific"
+
 
 div:
   div_data:
@@ -23,6 +58,7 @@ div:
     - [0,5,0]
     - [-0.5,-0.2,2.5]
     - [0.8, -0.1,-8]
+    - [10,0,'除数不能为0']
   div_myId:
     - 'int'
     - 'longint'
@@ -30,3 +66,5 @@ div:
     - 'zero'
     - 'negative'
     - 'mix'
+    - 'specific symbol'
+
